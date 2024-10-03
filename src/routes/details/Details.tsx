@@ -38,7 +38,7 @@ const Details = () => {
   if (!userData) return <div>Loading...</div>;
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-4xl mx-auto p-6 mt-[40px] bg-white shadow-lg rounded-lg">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2">
           <img src={userData.images[0]}  alt={userData.title} className="w-full h-[335px] object-cover rounded-lg mb-4" />
