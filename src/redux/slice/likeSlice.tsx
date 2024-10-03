@@ -6,7 +6,7 @@ interface LikeState {
 }
 
 const initialState: LikeState = {
-    wishlist: JSON.parse(localStorage.getItem("wishlist" || null) || "[]")
+    wishlist: JSON.parse(localStorage.getItem("wishlist") || "[]")
 }
 
 const likeSlice = createSlice({
