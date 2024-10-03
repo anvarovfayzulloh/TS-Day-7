@@ -1,12 +1,11 @@
 import { FcLikePlaceholder, FcLike } from "react-icons/fc";
 import { TFetchData } from "../../types";
-import { FC } from "react";
 import { AppDispatch } from "../../redux/store";
 import { useDispatch, useSelector } from "react-redux";
 import { addLike, unLike } from "../../redux/slice/likeSlice";
 import { RootState } from "../../redux/store";
 
-const Likeds: FC<{ data: TFetchData }> = ({ data }) => {
+const Likeds: React.FC<{data:TFetchData}> = ({ data }) => {
     const dispatch = useDispatch<AppDispatch>();
     
     const wishlist = useSelector((state: RootState) => state.likeds.wishlist);
