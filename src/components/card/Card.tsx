@@ -42,9 +42,9 @@ const Card: FC<{ data: TFetchData }> = ({ data }) => {
                     </div>
                     <div>
                         {isLiked ? (
-                            <FcLike onClick={() => handleUnLike(data.id)} className="w-[30px] h-[30px] cursor-pointer" />
+                            <FcLike onClick={() => handleUnLike(data.id)} className="w-[30px] h-[30px] cursor-pointer hover:scale-110 transition-transform" />
                         ) : (
-                            <FcLikePlaceholder onClick={() => handleLike()} className="w-[30px] h-[30px] cursor-pointer" />
+                            <FcLikePlaceholder onClick={() => handleLike()} className="w-[30px] h-[30px] cursor-pointer hover:scale-110 transition-transform" />
                         )}
                     </div>
                 </div>
