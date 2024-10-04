@@ -23,10 +23,10 @@ const Likeds: React.FC<{ data: TFetchData }> = ({ data }) => {
             <div className="flex justify-between items-center mb-4">
                 <div>
                     <div>
-                        <img className="w-[288px] h-[288px] object-cover" src={data.images[0]} alt="" />
+                        <img className="w-[288px] h-[288px] object-contain" src={data.images[0]} alt="" />
                     </div>
                     <div>
-                        <h1 className="font-bold text-2xl text-gray-900 max-w-[230px] w-full">{data.title}</h1>
+                        <h1 className="font-bold text-2xl text-gray-900 max-w-[230px] w-full">{data.title.slice(0, 15)}...</h1>
                         <div>
                             {isLiked ? (
                                 <FcLike
