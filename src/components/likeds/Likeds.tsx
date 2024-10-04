@@ -29,15 +29,9 @@ const Likeds: React.FC<{ data: TFetchData }> = ({ data }) => {
                         <h1 className="font-bold text-2xl text-gray-900 max-w-[230px] w-full">{data.title.slice(0, 15)}...</h1>
                         <div>
                             {isLiked ? (
-                                <FcLike
-                                    onClick={() => handleUnLike(data.id)}
-                                    className="w-10 h-10 text-red-500 cursor-pointer hover:scale-110 transition-transform"
-                                />
+                                <FcLike onClick={() => handleUnLike(data.id)} className="w-10 h-10 text-red-500 cursor-pointer hover:scale-110 transition-transform" />
                             ) : (
-                                <FcLikePlaceholder
-                                    onClick={() => handleLike()}
-                                    className="w-10 h-10 text-gray-500 cursor-pointer hover:scale-110 transition-transform"
-                                />
+                                <FcLikePlaceholder onClick={() => handleLike()} className="w-10 h-10 text-gray-500 cursor-pointer hover:scale-110 transition-transform" />
                             )}
                         </div>
                     </div>
